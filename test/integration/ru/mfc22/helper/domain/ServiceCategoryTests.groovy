@@ -17,6 +17,7 @@ class ServiceCategoryTests {
 
     @Test
     void testSaveCategory() {
+
         def serviceCategory = new ServiceCategory(name: "Безопасность")
 
         assertNotNull serviceCategory.save()
