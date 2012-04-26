@@ -1,8 +1,8 @@
 package ru.mfc22.helper.domain
 
-class ServiceCategory {
+class LifeSituation {
 
-    String name;
+    String name
 
     static constraints = {
         name(nullable: false, blank: false)
