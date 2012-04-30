@@ -11,4 +11,8 @@ class Department {
 
     static hasMany = [serviceCards : ServiceCard]
 
+    String toString() {
+        return shortName;
+    }
+
 }

@@ -12,4 +12,8 @@ class ServiceResult {
 
     static belongsTo = [ServiceCard]
 
+    String toString() {
+        return name;
+    }
+
 }

@@ -12,4 +12,8 @@ class ServiceReceiver {
 
     static hasMany = [serviceCards : ServiceCard]
 
+    String toString() {
+        return shortName;
+    }
+
 }

@@ -10,4 +10,8 @@ class ServiceCategory {
 
     static hasMany = [serviceCards : ServiceCard]
 
+    String toString() {
+        return name;
+    }
+
 }

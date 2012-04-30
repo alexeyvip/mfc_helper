@@ -16,4 +16,8 @@ class DocumentType {
 
     static belongsTo = [ServiceCard]
 
+    String toString() {
+        return "${original == 0 ? 'Копия' : 'Оригинал'}: ${name}";
+    }
+
 }

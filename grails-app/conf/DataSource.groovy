@@ -11,10 +11,21 @@ hibernate {
 }
 // environment specific settings
 environments {
+//    development {
+//        dataSource {
+//            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
+//            url = "jdbc:h2:mem:devDb;MVCC=TRUE"
+//        }
+//    }
     development {
         dataSource {
-            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:mem:devDb;MVCC=TRUE"
+            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
+            url = "jdbc:firebirdsql://192.168.56.101/c:/mfc_helper.fdb"
+            driverClassName = "org.firebirdsql.jdbc.FBDriver"
+            username = "sysdba"
+            password = "masterkey"
+            dialect = "org.hibernate.dialect.FirebirdDialect"
+            //hibernate.dialect
         }
     }
     test {

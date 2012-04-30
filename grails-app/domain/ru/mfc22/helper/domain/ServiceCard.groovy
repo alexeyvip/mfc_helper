@@ -2,6 +2,8 @@ package ru.mfc22.helper.domain
 
 class ServiceCard {
 
+    String amount
+
     static constraints = {
     }
 

@@ -10,4 +10,8 @@ class LifeSituation {
 
     static hasMany = [serviceCards : ServiceCard]
 
+    String toString() {
+        return name;
+    }
+
 }

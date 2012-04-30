@@ -58,7 +58,7 @@ class ServiceCardTests {
 
         def serviceCard = new ServiceCard(serviceReceiver: serviceReceiver,
                 department: department, lifeSituation: lifeSituation,
-                serviceCategory: serviceCategory)
+                serviceCategory: serviceCategory, amount: "Бесплатно")
 
         serviceCard.addToDocumentTypes(documentType)
         serviceCard.addToServiceResults(serviceResult)
@@ -110,7 +110,7 @@ class ServiceCardTests {
 
         def serviceCard = new ServiceCard(serviceReceiver: serviceReceiver,
                 department: department, lifeSituation: lifeSituation,
-                serviceCategory: serviceCategory)
+                serviceCategory: serviceCategory, amount: "1000 руб")
 
         serviceCard.addToDocumentTypes(documentType)
         serviceCard.addToServiceResults(serviceResult)
