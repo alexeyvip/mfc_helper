@@ -58,7 +58,9 @@ class ServiceCardTests {
 
         def serviceCard = new ServiceCard(serviceReceiver: serviceReceiver,
                 department: department, lifeSituation: lifeSituation,
-                serviceCategory: serviceCategory, amount: "Бесплатно")
+                serviceCategory: serviceCategory, amount: "Бесплатно",
+                name: "выдачи паспорта гражданина Российской Федерации",
+                shortName: "выдача паспорта")
 
         serviceCard.addToDocumentTypes(documentType)
         serviceCard.addToServiceResults(serviceResult)
@@ -110,7 +112,9 @@ class ServiceCardTests {
 
         def serviceCard = new ServiceCard(serviceReceiver: serviceReceiver,
                 department: department, lifeSituation: lifeSituation,
-                serviceCategory: serviceCategory, amount: "1000 руб")
+                serviceCategory: serviceCategory, amount: "1000 руб",
+                name: "выдачи паспорта гражданина Российской Федерации",
+                shortName: "выдача паспорта")
 
         serviceCard.addToDocumentTypes(documentType)
         serviceCard.addToServiceResults(serviceResult)
