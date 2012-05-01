@@ -1,0 +1,66 @@
+.yui-skin-sam {
+    background: url("/mfc_helper/images/bg.png") repeat-x;
+}
+
+.yui-t2 {
+    background-color: #ffffff
+}
+
+#hd {
+    /*background-color: #e81;*/
+}
+
+#bd {
+    background-color: #ef1;
+}
+
+#ft {
+    background-color: #0f1;
+}
+
+.float-right {
+    float: right;
+}
+
+.top-buttons {
+    background: url("../images/login-menu-bg.png") repeat-x scroll 0 -30px transparent;
+    float: right;
+    height: 30px;
+    margin: 0;
+}
+.top-first-button, .top-last-button {
+    background: url("../images/login-menu-bg.png") no-repeat scroll 0 0 transparent;
+    height: 30px;
+    /*float: left;*/
+}
+
+.top-first-button li a, .top-buttons li a:link, .top-buttons li a:visited,
+.top-buttons li a:hover, .top-buttons li a:active {
+    background: url("../images/login-menu-bg.png") no-repeat scroll 100% -90px transparent;
+    padding: 0 9px;
+    height: 30px;
+    line-height: 30px;
+    outline: medium none;
+    text-decoration: none;
+}
+
+.top-last-button li a, .top-buttons li a:link, .top-buttons li a:visited,
+.top-buttons li a:hover, .top-buttons li a:active {
+    background: url("../images/login-menu-bg.png") no-repeat scroll 100% -60px transparent;
+    padding: 0 9px;
+    height: 30px;
+    line-height: 30px;
+    outline: medium none;
+    text-decoration: none;
+}
+
+.top-first-button a span {
+    background: url('../images/door_in.png') no-repeat;
+    padding-left: 25px;
+}
+
+.user_info {
+    padding: 0 10px;
+    float: left;
+    line-height: 30px;
+}
