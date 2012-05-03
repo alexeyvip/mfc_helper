@@ -7,18 +7,6 @@ class ServiceCardController {
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def scaffold = ServiceCard
-    static navigation = [
-            [group: 'menu',
-            order: 1,
-            action: 'list',
-            subItems: [
-                    [action: 'list', order: 1],
-                    [action: 'create', order: 2, title: "Создать"],
-                    [action: 'edit', order: 3]
-            ]],
-            [action: 'dictionary',
-            order: 2]
-    ]
 
     def index() {
         redirect(action: "list", params: params)

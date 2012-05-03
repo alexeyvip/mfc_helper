@@ -7,8 +7,6 @@ class DepartmentController {
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
     def scaffold = Department
 
-    static navigation = true
-
     def index() {
         redirect(action: "list", params: params)
     }

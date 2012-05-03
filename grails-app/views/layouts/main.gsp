@@ -9,46 +9,25 @@
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'yui-grid-2.8.css')}" type="text/css">
     <g:layoutHead/>
     <r:layoutResources />
-    <nav:resources override="true"/>
-    <%-- ссылка до своего файла css navigation --%>
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'my-navigation.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'mfc.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'menu.css')}" type="text/css">
 </head>
 <body class="yui-skin-sam">
-<div id="doc" class="yui-t2">
-    <div id="hd" role="banner">
+<div id="doc2" class="yui-t7">
+    <div id="hd" role="navigation">
         <div>
-            <div class="float-right">
-                <div class="user_info">
-                    Плотников Алексей
-                </div>
-                <ul class="top-buttons">
-                    <li class="top-first-button">
-                        <a href="#">
-                            %{--<img src="${resource(dir: 'images', file: 'door_in.png')}">--}%
-                            <span>Войти</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            Плотников Алексей
         </div>
-        <div id="main_menu"><nav:render group="menu" /></div>
+        <div id="main_menu" class="background-border background-grey"><g:render template="/menu" /></div>
     </div>
     <div id="bd" role="main">
-        <div id="yui-main">
-            <div class="yui-b">
-                <div class="yui-g">
-                    <g:layoutBody/>
-                </div>
+        <div class="yui-g main-body">
+            <div class="main-body-content">
+                <g:layoutBody/>
             </div>
         </div>
-        <div class="yui-b">
-            <nav:renderSubItems group="menu" />
-            <!-- YOUR NAVIGATION GOES HERE -->
-        </div>
-
     </div>
-    <div id="ft" role="contentinfo"><p>Footer</p></div>
+    <div id="ft" role="contentinfo" class="background-grey footer">${message(code: 'footer.title')}</div>
     <g:javascript library="application"/>
     <r:layoutResources />
 </div>
