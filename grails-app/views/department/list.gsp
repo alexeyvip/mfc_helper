@@ -3,38 +3,31 @@
 <!doctype html>
 <html>
 	<head>
-		<g:set var="entityName" value="${message(code: 'department.label', default: 'Department')}" />
+		<meta name="layout" content="main">
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<a href="#list-department" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="create" action="create"><g:message code="create.new.department" /></g:link></li>
 			</ul>
 		</div>
 		<div id="list-department" class="content scaffold-list" role="main">
-			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<table>
+			<table class="main-table" id="list_table">
+                <caption><g:message code="department.list" /></caption>
 				<thead>
 					<tr>
-					
-						<g:sortableColumn property="name" title="${message(code: 'department.name.label', default: 'Name')}" />
-					
-						<g:sortableColumn property="shortName" title="${message(code: 'department.shortName.label', default: 'Short Name')}" />
-					
+						<g:sortableColumn property="name" title="${message(code: 'name')}"  />
+						<g:sortableColumn property="shortName" title="${message(code: 'shortname')}" />
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${departmentInstanceList}" status="i" var="departmentInstance">
-					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					
+					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}" row_id="${departmentInstance.id}">
 						<td><g:link action="show" id="${departmentInstance.id}">${fieldValue(bean: departmentInstance, field: "name")}</g:link></td>
-					
 						<td>${fieldValue(bean: departmentInstance, field: "shortName")}</td>
 					
 					</tr>
@@ -45,5 +38,6 @@
 				<g:paginate total="${departmentInstanceTotal}" />
 			</div>
 		</div>
+    %{--<jq:jquery>TableSelector.init('list_table');</jq:jquery>--}%
 	</body>
 </html>

@@ -7,6 +7,7 @@
     <title>${message(code: 'title.main')} &raquo; <g:layoutTitle default="Добро пожаловать"/></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'yui-grid-2.8.css')}" type="text/css">
+    <g:javascript library="jquery" plugin="jquery" />
     <g:layoutHead/>
     <r:layoutResources />
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'mfc.css')}" type="text/css">

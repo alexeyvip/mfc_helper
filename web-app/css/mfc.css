@@ -85,3 +85,216 @@
     padding: 5px 10px 10px;
     background: #fff;
 }
+
+.main-table {
+    border-collapse:collapse;
+    background:#EFF4FB url(http://www.roscripts.com/images/teaser.gif) repeat-x;
+    border-left:1px solid #686868;
+    border-right:1px solid #686868;
+    /*font:0.8em/145% 'Trebuchet MS',helvetica,arial,verdana;*/
+    color: #333;
+    width: 100%;
+}
+
+.main-table td, th {
+    padding:5px;
+}
+
+.main-table caption {
+    padding: 10px 0 .5em 0;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    background: transparent;
+}
+
+/* =links
+----------------------------------------------- */
+
+.main-table tbody a {
+    color:#950000;
+    text-decoration:none;
+}
+
+.main-table a:link {}
+
+.main-table a:visited {
+    font-weight:normal;
+    /*color:#666;*/
+    text-decoration: line-through;
+}
+
+.main-table a:hover {
+    border-bottom: 1px #bbb;
+}
+
+/* =head =foot
+----------------------------------------------- */
+
+.main-table thead th, tfoot th, tfoot td {
+    background:#333 url(../images/table-bg.gif) repeat-x;
+    color:#fff;
+}
+
+.main-table thead th a, .main-table thead th a:visited {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.main-table tfoot td {
+    text-align:right
+}
+
+/* =body
+----------------------------------------------- */
+
+.main-table tbody th,.main-table tbody td {
+    border-bottom: dotted 1px #333;
+}
+
+.main-table tbody {
+    background: url(../images/table-body-bg.png) repeat;
+}
+
+
+.main-table tbody td {
+    white-space: nowrap;
+}
+
+.main-table tbody td a {
+    /*color:#333;*/
+    color:#950000;
+}
+
+.odd {
+    background: #fafafa;
+}
+
+.main-table tbody tr:hover {
+    /*background:#fafafa*/
+}
+
+.desc {
+    background: url(../images/arrow_down.png) no-repeat;
+}
+
+.main-table thead th .sorted .asc a {
+    background: url(../images/arrow_up.png) no-repeat;
+}
+
+.table-form td {
+    padding: 0 4px 7px 0;
+}
+
+/* 2nd NAVIGATION MENU */
+
+.nav {
+    background-color: #efefef;
+    padding: 0.5em 0.75em;
+    -moz-box-shadow: 0 0 3px 1px #aaaaaa;
+    -webkit-box-shadow: 0 0 3px 1px #aaaaaa;
+    box-shadow: 0 0 3px 1px #aaaaaa;
+    zoom: 1;
+}
+
+.nav ul {
+    overflow: hidden;
+    padding-left: 0;
+    zoom: 1;
+}
+
+.nav li {
+    display: block;
+    float: left;
+    list-style-type: none;
+    margin-right: 0.5em;
+    padding: 0;
+}
+
+.nav a {
+    color: #666666;
+    display: block;
+    padding: 0.25em 0.7em;
+    text-decoration: none;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+}
+
+.nav a:active, .nav a:visited {
+    color: #666666;
+}
+
+.nav a:focus, .nav a:hover {
+    background-color: #999999;
+    color: #ffffff;
+    outline: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.no-borderradius .nav a:focus, .no-borderradius .nav a:hover {
+    background-color: transparent;
+    color: #444444;
+    text-decoration: underline;
+}
+
+.nav a.home, .nav a.list, .nav a.create {
+    background-position: 0.7em center;
+    background-repeat: no-repeat;
+    text-indent: 25px;
+}
+
+.nav a.home {
+    background-image: url(../images/skin/house.png);
+}
+
+.nav a.list {
+    background-image: url(../images/skin/database_table.png);
+}
+
+.nav a.create {
+    background-image: url(../images/skin/database_add.png);
+}
+
+/*  End 2nd NAVIGATION MENU */
+
+/* BUTTONS */
+
+.save, .delete, .edit {
+    background: none repeat scroll 0 0 rgba(142, 144, 143, 0.2);
+    padding: 0 5px 2px;
+    border: medium none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000
+    /*font-size: 11px;*/
+}
+
+/* END BUTTONS */
+
+.content {
+}
+
+.content h1 {
+    /*border-bottom: 1px solid #CCCCCC;*/
+    margin: 0.8em 1em 0.3em;
+    padding: 0 0.25em;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    background: transparent;
+}
+
+/* table_service_cards */
+.table_service_cards {
+    margin: 20px 0;
+}
+/* table_service_cards */
+
+.table-show td {
+    border: 1px solid;
+    padding: 0 2px 0 2px;
+}
