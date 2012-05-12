@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<title><g:message code="default.list.label" args="[entityName]" /></title>
+		<title><g:message code="department.list" default="Department list" /></title>
 	</head>
 	<body>
 		<div class="nav" role="navigation">

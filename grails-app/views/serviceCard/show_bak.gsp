@@ -44,15 +44,9 @@
         <tr>
             <td><g:message code="document" default="Document" /></td>
             <td>
-                <table>
-                    <g:each in="${serviceCardInstance.documentTypes}" var="d">
-                        <tr>
-                            <td>
-                                <g:link controller="documentType" action="show" id="${d.id}">${d?.encodeAsHTML()}</g:link>
-                            </td>
-                        </tr>
-                    </g:each>
-                </table>
+                <g:each in="${serviceCardInstance.documentTypes}" var="d">
+                    <g:link controller="documentType" action="show" id="${d.id}">${d?.encodeAsHTML()}</g:link>
+                </g:each>
             </td>
         </tr>
         <tr>
@@ -76,15 +70,9 @@
         <tr>
             <td><g:message code="service.result" default="Service result" /></td>
             <td>
-                <table>
-                    <g:each in="${serviceCardInstance.serviceResults}" var="s">
-                        <tr>
-                            <td>
-                                <g:link controller="serviceResult" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link>
-                            </td>
-                        </tr>
-                    </g:each>
-                </table>
+                <g:each in="${serviceCardInstance.serviceResults}" var="s">
+                    <g:link controller="serviceResult" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link>
+                </g:each>
             </td>
         </tr>
     </table>

@@ -4,38 +4,30 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'serviceCard.label', default: 'ServiceCard')}" />
-		<title><g:message code="default.list.label" args="[entityName]" /></title>
+		<title><g:message code="service.card.list" default="Service card list" /></title>
 	</head>
 	<body>
-		<a href="#list-serviceCard" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		%{--<a href="#list-serviceCard" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>--}%
 		<div class="nav" role="navigation">
 			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+				%{--<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>--}%
+				<li><g:link class="create" action="create"><g:message code="create.service.card" default="Create service card" /></g:link></li>
 			</ul>
 		</div>
 		<div id="list-serviceCard" class="content scaffold-list" role="main">
-			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<table>
+			<table class="main-table">
+                <caption><g:message code="service.card.list" default="Service card list" /></caption>
 				<thead>
 					<tr>
-					
-						<g:sortableColumn property="name" title="${message(code: 'serviceCard.name.label', default: 'Name')}" />
-					
-						<g:sortableColumn property="shortName" title="${message(code: 'serviceCard.shortName.label', default: 'Short Name')}" />
-					
-						<g:sortableColumn property="amount" title="${message(code: 'serviceCard.amount.label', default: 'Amount')}" />
-					
-						<th><g:message code="serviceCard.department.label" default="Department" /></th>
-					
-						<th><g:message code="serviceCard.lifeSituation.label" default="Life Situation" /></th>
-					
-						<th><g:message code="serviceCard.serviceCategory.label" default="Service Category" /></th>
-					
+						<g:sortableColumn property="name" title="${message(code: 'name', default: 'Name')}" />
+						<g:sortableColumn property="shortName" title="${message(code: 'shortname', default: 'Short Name')}" />
+						<g:sortableColumn property="amount" title="${message(code: 'amount', default: 'Amount')}" />
+						<th><g:message code="department" default="Department" /></th>
+						<th><g:message code="lifesituation" default="Life Situation" /></th>
+						<th><g:message code="service.category" default="Service Category" /></th>
 					</tr>
 				</thead>
 				<tbody>
